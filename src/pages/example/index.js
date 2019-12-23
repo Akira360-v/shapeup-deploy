@@ -1,6 +1,8 @@
 import Vue from 'vue';
 import AppVue from './App.vue';
 import AppReact from './App.jsx';
+// import HeadHesive from 'headhesive/headhesive.min.js';
+
 
 import './index.sass';
 import './example.pug';
