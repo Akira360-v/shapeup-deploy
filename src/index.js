@@ -1,4 +1,5 @@
 import 'core-js/es/promise';
+// import Headhesive from 'headhesive/dist/headhesive.min.js';
 
 import $ from 'jquery';
 
@@ -17,3 +18,4 @@ $(() => {
   initBlocks();
   initPages();
 });
+

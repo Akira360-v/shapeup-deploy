@@ -1,0 +1,91 @@
+.head__menu
+  position: fixed
+  width: 100%
+  padding-bottom: 15px
+
+.header__nav
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin: 0 auto
+
+  max-width: 1140px
+  width: 100%
+  padding-top: 20px
+
+.nav__menu_burger
+  display: none
+.nav__box
+  display: flex
+  & li
+    margin-right: 30px
+.box__url
+  text-decoration: none
+  color: #ffffff
+  font-family: Lato
+  font-size: 16px
+  &:hover
+    color: #f80759
+
+
+
+
+// Cloned elem class
+.headhesive
+  width: 100%
+  transition: 0.5s
+
+// Stick class
+.headhesive--stick
+  background: #000
+
+  
+
+// Unstick class
+.headhesive--unstick
+
+@media screen and (max-width: 992px)
+  .head__menu
+  .nav__box
+    & li
+      margin-right: 15px
+@media screen and (max-width: 768px)
+  .head__menu
+    z-index: 10
+    position: relative
+  .nav__box
+    position: fixed
+    left: 0
+    top: 0
+    height: 80%
+    width: 100%
+    background: red
+    
+  .nav__menu_burger
+    display: block
+    width: 30px
+    height: 20px
+    position: relative
+    & span
+      position: absolute
+      left: 0
+      background: #fff
+      width: 100%
+      height: 2px
+      top: 9px
+    &::before,
+    &::after
+      
+      content: ""
+      background: #fff
+      width: 100%
+      height: 2px
+      position: absolute
+      left: 0
+    &::before
+      top: 0
+    &::after
+      bottom: 0
+      
+    
+      
