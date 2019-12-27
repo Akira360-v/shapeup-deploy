@@ -1,31 +1,72 @@
 .header
-  background: url("./header-bg.jpg") center center no-repeat
-  font-family: Lato400
-
-
-.header
-.container
+  background: #161414 url("./header-bg.jpg") center center no-repeat
+  font-family: Lato
 .header__cont
-  margin-top: 200px
+  margin-top: 250px
   & .cont__text
     color: #fefefe
     font-family: "Lato-Heavy"
     font-size: 60px
     font-weight: 400
     text-transform: uppercase
+    line-height: 1.3
     & span 
-      // color: #f64f59
-      // color: #8e2de2
       color: #12c2e9
       font-size: 48px
 .header__text
+  max-width: 610px
+  margin-top: 12px
   color: #ffffff
   font-family: Lato
   font-size: 16px
   line-height: 24px
 .header__btn
-
+  margin-top: 40px
+  margin-bottom: 220px
   & a
-    border-radius: 5px  
-    background-color: #ed213a
-    background-image: linear-gradient(to right, #e100ff 0%, #f80759 100%)
+    text-decoration: none
+    margin-right: 20px
+    padding: 15px 60px
+    border-radius: 5px 
+    background-image: linear-gradient(to right, #ff0055 0%, #f0142d 100%)
+    color: #fefefe
+    font-family: Lato
+    font-size: 16px
+    font-weight: 400
+    line-height: 24px
+    border: 1px solid #ed213a
+    &:hover
+      border: 1px solid #ed213a
+      background-image: none
+@media screen and (max-width: 768px)
+  .header
+    background-position-x: -800px
+  .header__cont
+    margin-top: 170px
+    & .cont__text
+      font-size: 42px
+      & span
+        font-size: 22px
+  .header__text
+    max-width: 375px
+  .header__btn
+    display: flex
+    flex-direction: column
+    margin-top: 25px
+    margin-bottom: 200px
+    & a
+      width: 205px
+      margin-top: 25px
+@media screen and (max-width: 475px)
+  .header
+    background-position-x: -900px
+  .header__cont
+    margin-top: 170px
+    & .cont__text
+      font-size: 34px
+      & span
+        font-size: 15px
+  .header__text
+    margin-top: 25px
+  .header__btn
+    margin-bottom: 170px
