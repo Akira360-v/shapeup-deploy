@@ -2,23 +2,25 @@
   position: fixed
   width: 100%
   padding-bottom: 15px
+  display: none
 
 .header__nav
   display: flex
   align-items: center
   justify-content: space-between
   margin: 0 auto
-
   max-width: 1140px
   width: 100%
   padding-top: 20px
 
 .nav__menu_burger
   display: none
+
 .nav__box
   display: flex
   & li
     margin-right: 30px
+
 .box__url
   text-decoration: none
   color: #ffffff
@@ -27,39 +29,61 @@
   &:hover
     color: #f80759
 
-
-
-
 // Cloned elem class
 .headhesive
+  display: block
   width: 100%
   transition: 0.5s
+  padding-bottom: 0
 
 // Stick class
 .headhesive--stick
-  background: #000
-
+  background: #2d5252a8
   
+.nav__menu_burger.active:before
+  transform: rotate(45deg)
+  top: 9px
 
-// Unstick class
-.headhesive--unstick
+.nav__menu_burger.active:after
+  transform: rotate(-45deg)
+  bottom: 9px
+
+.nav__menu_burger.active span
+  transform: scale(0)
+  
+.header__nav.active
+  & .nav__box
+    left: 0
 
 @media screen and (max-width: 992px)
-  .head__menu
   .nav__box
     & li
       margin-right: 15px
+
 @media screen and (max-width: 768px)
   .head__menu
-    z-index: 10
+    background: #2d5252a8
+
+  .header__nav
     position: relative
+    z-index: 10
+    padding-top: 0
+
   .nav__box
+    z-index: 2
     position: fixed
     left: 0
-    top: 0
-    height: 80%
+    top: 53px
     width: 100%
-    background: red
+    background: #2d5252
+    flex-direction: column
+    padding-left: 20px
+    left: -100% 
+    transition: all 0.3s ease 0s
+    & li
+      margin-top: 15px
+      &:last-child
+        margin-bottom: 15px
     
   .nav__menu_burger
     display: block
@@ -73,19 +97,20 @@
       width: 100%
       height: 2px
       top: 9px
+      transition: all 0.3s ease 0s
     &::before,
-    &::after
-      
+    &::after   
       content: ""
       background: #fff
       width: 100%
       height: 2px
       position: absolute
       left: 0
+      transition: all 0.3s ease 0s
     &::before
       top: 0
     &::after
       bottom: 0
-      
+
     
       
