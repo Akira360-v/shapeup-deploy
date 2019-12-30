@@ -6,7 +6,7 @@ $ git clone
 $ rm -rf .git
 $ git init
 $ npm install
-$ npm install headhesive
+//$ npm install headhesive
 ```
 
 ## Develop
