@@ -5,8 +5,8 @@ import Swiper from 'swiper/js/swiper.min.js';
 
 
 var galleryThumbs = new Swiper('.gallery-thumbs', {
-  spaceBetween: 10,
-  slidesPerView: 4,
+  spaceBetween: 30,
+  slidesPerView: 3,
   loop: true,
   freeMode: true,
   loopedSlides: 5, //looped slides should be the same
@@ -14,7 +14,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
   watchSlidesProgress: true,
 });
 var galleryTop = new Swiper('.gallery-top', {
-  spaceBetween: 10,
+  spaceBetween:   25,
   loop:true,
   loopedSlides: 5, //looped slides should be the same
   navigation: {
