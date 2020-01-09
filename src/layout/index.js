@@ -5,6 +5,7 @@ import './content';
 import './header';
 import './about';
 import './choose';
+import './reviews';
 
 import './footer';
 
