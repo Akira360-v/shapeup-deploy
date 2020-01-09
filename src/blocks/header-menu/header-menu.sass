@@ -31,6 +31,7 @@
 
 // Cloned elem class
 .headhesive
+  z-index: 1000
   display: block
   width: 100%
   transition: 0.5s
@@ -39,7 +40,7 @@
 // Stick class
 .headhesive--stick
   background: #2d5252a8
-  
+
 .nav__menu_burger.active:before
   transform: rotate(45deg)
   top: 9px
@@ -50,7 +51,7 @@
 
 .nav__menu_burger.active span
   transform: scale(0)
-  
+
 .header__nav.active
   & .nav__box
     left: 0
@@ -78,13 +79,13 @@
     background: #2d5252
     flex-direction: column
     padding-left: 20px
-    left: -100% 
+    left: -100%
     transition: all 0.3s ease 0s
     & li
       margin-top: 15px
       &:last-child
         margin-bottom: 15px
-    
+
   .nav__menu_burger
     display: block
     width: 30px
@@ -99,7 +100,7 @@
       top: 9px
       transition: all 0.3s ease 0s
     &::before,
-    &::after   
+    &::after
       content: ""
       background: #fff
       width: 100%
@@ -112,5 +113,5 @@
     &::after
       bottom: 0
 
-    
-      
+
+

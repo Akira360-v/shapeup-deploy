@@ -1,21 +1,20 @@
 .about
   background-image: url("./bg.jpg")
-.container
-
-
+  
 .about__cont
     display: flex
+
 .about__head
     flex-basis: 50%
-.shape
+
 .shape__title
     margin-top: 125px
     letter-spacing: 0.9px
 
 .shape__head
-    margin-top: 15px
-
+    margin-top: 20px
     letter-spacing: 1.5px
+
 .shape__line
     margin-top: 29px
 
@@ -23,9 +22,10 @@
     width: 60px
     height: 2px
     background-color: #ed213a
-    background-image: linear-gradient(to right, #e100ff 0%, #f80759 100%)
+    background-image: #f80759
 
 .shape__h3
+    max-width: 85%
     margin-top: 44px
     color: #ffffff
     font-family: Lato
@@ -34,35 +34,132 @@
     line-height: 26px
 
 .shape__p
-    margin-top: 26px
+    max-width: 90%
+    margin-top: 30px
     color: #ffffff
     font-family: Lato
     font-size: 14px
     font-weight: 400
     line-height: 26px
+
 .shape__a
     margin-top: 28px
-a
+    & a
+        text-decoration: none
+        // color: #f80759
+        color: #ed213a
+        font-weight: 700
+
 .about__slider
+    margin-top: 80px
+    position: relative
+    overflow: hidden
     flex-basis: 50%
 
+.swiper-wrapper
+    display: flex
+
+.gallery-top
+    height: 420px
+    overflow: hidden
+    & .swiper-slide
+        & figure
+            & img
+                width: 100%
+                height: 420px
+                overflow: hidden
+                padding-bottom: 25px
+
+.gallery-thumbs
+    height: 106px
+    & .swiper-slide
+        & figure
+            & img
+                max-height: 100%
+                height: -webkit-fill-available
+                width: 100%
+
+.swiper-slide-thumb-active
+    border: 3px red solid
 
 .about__meet
+    margin-top: 150px
     display: flex
     justify-content: center
+
 .meet
     display: flex
     flex-direction: column
     align-items: center
-.meet__title
+    overflow: hidden
+    padding-bottom: 93px
+
 .meet__head
-    margin-top: 19px
+    margin-top: 17px
+
 .meet__line
     margin-top: 29px
-.line
-.meet__trainers
+
 .trainers
-.trainers__img
-.trainers__text
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
 .trainers__name
-.trainers__type
+    position: relative
+    margin-right: 20px
+    margin-top: 20px
+    &:last-child
+        margin-right: 0
+    figure
+        position: relative
+        img
+        h4
+            display: none
+        p
+            display: none
+        span
+        &:hover
+            h4
+                position: absolute
+                left: calc( 50% - 60px )
+                bottom: 40px
+                container: ""
+                display: flex
+                color: #ffffff
+                font-family: Lato
+                font-size: 18px
+                font-weight: 700
+                line-height: 24px
+                letter-spacing: 0.9px
+            p
+                position: absolute
+                left: calc( 50% - 40px )
+                bottom: 20px
+                container: ""
+                display: flex
+                color: #12c2e9
+                font-family: Lato
+                font-size: 12px
+                font-weight: 400
+                line-height: 24px
+                letter-spacing: 0.6px
+            span 
+                width: 100%
+                height: 98%
+                background: #50181844
+                z-index: 1221
+                position: absolute
+                left: 0
+                border: 2px red solid
+
+@media screen and (max-width: 992px)
+    .about__cont
+        flex-direction: column
+
+@media screen and (max-width: 500px)
+    .trainers__name
+        margin-right: 20px
+        margin-left: 20px
+        &:last-child
+            margin-right: 20px
