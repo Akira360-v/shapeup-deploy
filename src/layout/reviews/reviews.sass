@@ -3,6 +3,7 @@
 
 .reviews__say
   overflow: hidden
+  padding-bottom: 75px
 
 .reviews__title
   margin-top: 74px
@@ -50,3 +51,42 @@
     font-weight: 400
     line-height: 24px
   & .user__star
+    margin-top: 25px
+/////////////////////
+  
+.reviews__say
+  & .swiper-pagination
+    margin-top: 45px
+    position: relative
+    & .swiper-pagination-bullet
+      // padding: 0 20px
+      margin: 0 5px
+      width: 14px
+      height: 14px
+      background: #fff
+      opacity: 1
+      outline: none
+    & .swiper-pagination-bullet-active
+      background-color: #12c2e9
+
+/////////////////////
+
+.user__star1
+  & .rating li.current
+    width: 100%
+
+.user__star2
+  & .rating li.current
+    width: 80%
+
+.user__star3
+  & .rating li.current
+    width: 80%
+
+.user__star4
+  & .rating li.current
+    width: 60%
+
+@media screen and (max-width: 500px)
+  .reviews__list
+    flex-direction: column

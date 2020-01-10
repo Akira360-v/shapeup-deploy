@@ -8,6 +8,24 @@ var swiperReviews = new Swiper('.reviews__slider', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 1.2,
+      spaceBetween: 30,
+    },
+    800: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
 });
 
 
@@ -22,10 +40,5 @@ var swiperReviews = new Swiper('.reviews__slider', {
 //   loopedSlides: 5, //looped slides should be the same
 //   watchSlidesVisibility: true,
 //   watchSlidesProgress: true,
-//   breakpoints: {
-//       600: {
-//         slidesPerView: 3,
-//         spaceBetween: 30,
-//       }
-//     },
+// ,
 // });
