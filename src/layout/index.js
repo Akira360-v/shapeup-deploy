@@ -7,6 +7,7 @@ import './about';
 import './choose';
 import './reviews';
 import './pricing__table';
+import './blog';
 
 import './footer';
 
