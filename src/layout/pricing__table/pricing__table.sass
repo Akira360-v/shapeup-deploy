@@ -4,30 +4,93 @@
   background-image: url("./bg.jpg")
   overflow: hidden
 
+.tables__title
+  margin-top: 155px
+  text-align: center
 
+.tables__head
+  margin-top: 16px
+  text-align: center
 
-// .container
-// .pricing__tables
-// .tables__title.title_col Pricing Table
-// .tables__head.head_col Our Membership Plans
-// .tables__line
-// .line
-// .tadles__services
-// .services
-// //- -1-
-// .services__item
-// .services__price $10/Day
-// .services__day One Day Training
-// .services__text
-// p One day access to all clubs
-// p Training in group
-// p No Dedicated trainer
-// p Access to one 1 hour fitness class
-// p 
-// |No access to spa center
-// br
-// |(Book Separately)
-// .services__btn
+.tables__line
+  margin-top: 30px
+  display: flex
+  justify-content: center
+
+.services
+  margin-top: 30px
+  margin-bottom: 80px
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+
+.services__item
+  margin-top: 20px
+  margin-left: 10px
+  margin-right: 10px
+  text-align: center
+  border: 2px solid #222222
+  max-width: 350px
+  width: 100%
+  &:first-child
+    margin-left: 0
+    
+  &:nth-child(2)
+    border: 2px solid #12c2e9
+    & .services__day
+      background-color: #ed213a
+  &:last-child
+    margin-right: 0
+    
+.services__price
+  margin-top: 43px
+  color: #ffffff
+  font-size: 24px
+  line-height: 24px
+  font-family: "Lato"
+  font-weight: 400
+  letter-spacing: 1.2px
+  & span
+    font-family: "Lato"
+    font-size: 48px
+    font-weight: 700
+    letter-spacing: 2.4px
+
+.services__day
+  margin-top: 37px
+  padding:  13px 0
+  background-color: #262424
+  color: #ffffff
+  font-family: Lato
+  font-size: 18px
+  font-weight: 400
+  line-height: 24px
+
+.services__text
+  margin-top: 33px
+  color: #ffffff
+  font-family: Lato
+  font-size: 14px
+  font-weight: 400
+  line-height: 24px
+  letter-spacing: 0.7px
+  & p
+    margin-top: 7px
+
+.services__btn
+  margin-top: 50px
+  margin-bottom: 53px
+  & a 
+    color: #fefefe
+    font-family: Lato
+    font-size: 12px
+    font-weight: 400
+    line-height: 24px
+    letter-spacing: 0.6px
+    text-decoration: none
+    padding: 17px 40px
+    border-radius: 5px
+    border: 2px solid #222222
 
 //////////////////////////////////////I
 .pricing__slider
@@ -35,7 +98,14 @@
     top: 240px
   & .swiper-button-prev
     top: 240px
+
 .pricing__img
   width: 320px
   height: 320px
 //////////////////////////////////////I
+@media screen and (max-width: 1130px)
+  .services__item
+    &:first-child
+      margin-left: 10px
+    &:last-child
+      margin-right: 10px
