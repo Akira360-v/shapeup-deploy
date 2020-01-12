@@ -39,7 +39,10 @@
         .services
           //- -1-
           .services__item
-            .services__price $10/Day
+            .services__price
+              |$
+              span 10
+              | /Day
             .services__day One Day Training
             .services__text
               p One day access to all clubs
@@ -50,10 +53,15 @@
                 |No access to spa center
                 br
                 |(Book Separately)
-            .services__btn Book Now
+            .services__btn 
+              a(href='#') Book Now
           //- -2-
           .services__item
-            .services__price $49/month
+          
+            .services__price 
+              |$
+              span 49
+              |/month
             .services__day One Year Subscription
             .services__text
               p Access to all clubs
@@ -64,11 +72,14 @@
                 |Access to spa center 
                 br
                 |(Book Separately)
-
-            .services__btn Book Now
+            .services__btn
+              a(href='#') Book Now
           //- -3-
           .services__item
-            .services__price $65/month
+            .services__price
+              |$
+              span 65
+              |/month
             .services__day One Month Sybscription
             .services__text
               p Access to all clubs
@@ -79,5 +90,6 @@
                 |Access to spa center
                 br
                 |(Book Separately)
-
-            .services__btn Book Now
+            .services__btn
+              a(href='#') Book Now
+            
