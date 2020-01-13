@@ -1,5 +1,139 @@
-.footer
-  flex-grow: 0
-  flex-shrink: 0
-  flex-basis: auto
-  margin-top: 3333px
+footer
+  background-color: #111111
+  padding-bottom: 29px
+.footer__title
+  display: flex
+  padding-top: 50px
+  justify-content: space-between
+.footer__shapeup
+  margin-top: 15px
+  .logo
+  & p
+    margin-top: 25px
+    color: #bdc3c7
+    font-family: Lato
+    font-size: 16px
+    font-weight: 400
+    line-height: 30px
+    width: 280px
+.shapeup__follow
+  margin-top: 24px
+  color: #bdc3c7
+  font-family: Lato
+  font-size: 20px
+  font-weight: 700
+  line-height: 30px
+.follow__nav
+  margin-top: 7px
+  display: flex
+.follow__us
+  margin-right: 13px
+  width: 40px
+  height: 40px
+  border: 1px solid #555555
+  & span
+    display: flex
+    justify-content: center
+    align-items: center
+    & img
+      margin-top: 12px
+  &:hover
+    border: 1px solid #f80759
+.footer__quick
+.quick__head
+  margin-top: 29px
+  color: #ffffff
+  font-family: "Lato-Heavy"
+  font-size: 24px
+  font-weight: 400
+  line-height: 30px
+.quick__cont
+  margin-top: 40px
+
+.quick__nav
+  margin-top: 20px
+  display: flex
+  & span
+    margin-top: 2px
+    margin-right: 10px
+    width: 20px
+    height: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+  img
+  & p
+    color: #bdc3c7
+    font-family: Lato
+    font-size: 14px
+    font-weight: 400
+    line-height: 24px
+.footer__popular
+  margin-top: 30px
+.popular__head
+  color: #ffffff
+  font-family: "Lato-Heavy"
+  font-size: 24px
+  font-weight: 400
+  line-height: 30px
+.popular__tags
+  margin-top: 33px
+  flex-wrap: wrap
+  display: flex
+  width: 360px
+
+  & a
+    color: #ffffff
+    font-family: Lato
+    font-size: 15px
+    font-weight: 400
+    line-height: 28.73px
+    text-decoration: none
+    border: 1px solid #555555
+    padding: 5px 20px
+    margin-right: 10px
+    margin-top: 10px
+    &:hover
+      background-image: linear-gradient(to right, #ed213a 0%, #f80759 100%)
+    
+.footer__cont
+  margin-top: 60px
+  & ul
+    height: 80px
+    background: red
+    display: flex
+    align-items: center
+    justify-content: center
+    background-image: linear-gradient(to right, #ed213a 0%, #f80759 100%)
+    & li
+      margin-right: 35px
+
+      & a
+        text-decoration: none
+        color: #ffffff
+        font-family: Lato
+        font-size: 16px
+        font-weight: 400
+
+.copyright
+  margin-top: 20px
+  text-align: center
+  color: #ffffff
+  font-family: Lato
+  font-size: 16px
+  font-weight: 700
+@media screen and (max-width: 950px)
+  .footer__title
+    flex-wrap: wrap
+    justify-content: center
+  .footer__quick
+    padding: 0 20px
+@media screen and (max-width: 768px)
+  .footer__cont
+    & ul
+      flex-wrap: wrap
+      & li
+        margin-right: 15px
+@media screen and (max-width: 500px)
+  .popular__tags
+    width: 260px
